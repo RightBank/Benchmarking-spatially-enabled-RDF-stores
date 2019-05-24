@@ -1,6 +1,6 @@
 # Introduction
 
-The artifacts provided here were developed during a research ([Assessment and Benchmarking of Spatially-Enabled RDF stores for Next Generation of Spatial Data Infrastructure]). The research is aimed at the evaluation of geospatial capabilities (with focus on GeoSPARQL-compliance) of five RDF stores: 
+The artifacts provided here were developed during a research ([Assessment and Benchmarking of Spatially-Enabled RDF stores for Next Generation of Spatial Data Infrastructure]). The research is aimed at the evaluation of geospatial capabilities (with focus on GeoSPARQL-compliance) of five well-known RDF stores: 
 
  - Eclipse RDF4J 2.4.2
  - Apache Jena 3.9.0 with GeoSPARQL-Jena 1.0.3
@@ -76,5 +76,5 @@ For Virtuoso, the database cannot be flushed with deletion of any data, rather t
 ## License
 The java libraries used in these folders are open-source from the respective vendors and the Java source code on this repository is also released for free and open use of the research and development community.
 ## Contact
-[Weiming Huang](mailto:weiming.huang@nateko.lu.se)
+[Weiming Huang](mailto:weiming.huang@nateko.lu.se)<br/>
 [Amir Raza](mailto:razaamirsyed@gmail.com)
