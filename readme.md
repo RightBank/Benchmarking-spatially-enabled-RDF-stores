@@ -76,5 +76,6 @@ For Virtuoso, the database cannot be flushed with deletion of any data, rather t
 ## License
 The java libraries used in these folders are open-source from the respective vendors and the Java source code on this repository is also released for free and open use of the research and development community.
 ## Contact
-[Weiming Huang](mailto:weiming.huang@nateko.lu.se)<br/>
-[Amir Raza](mailto:razaamirsyed@gmail.com)
+[Amir Raza @ Lund University](mailto:razaamirsyed@gmail.com)<br/>
+[Weiming Huang @ Lund University](mailto:weiming.huang@nateko.lu.se)
+
