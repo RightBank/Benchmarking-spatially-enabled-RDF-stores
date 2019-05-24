@@ -1,0 +1,20 @@
+PREFIX cpmeta1: <http://meta.icos-cp.eu/ontologies/cpmeta/>
+PREFIX geo: <http://www.opengis.net/ont/geosparql#>
+PREFIX sf: <http://www.opengis.net/ont/sf#> 
+
+CONSTRUCT {?obj a geo:Feature;
+                geo:hasGeometry [ 
+                    a sf:LineString;
+                    geo:asWKT ?wkt
+                ] }
+  WHERE{
+ ?obj cpmeta1:asGeoJSON ?geoJSON
+ BIND(REPLACE(REPLACE(REPLACE(REPLACE(?geoJSON,"\"","")," \t",""),"\n","")," ","") AS ?v1).
+ BIND(REPLACE(REPLACE(REPLACE(?v1,"type:",""),"coordinates:",""),"], \\[","@") AS ?v2).
+ BIND(REPLACE(REPLACE(?v2,","," "),"@",",") AS ?v3).
+ BIND(REPLACE(REPLACE(REPLACE(?v3," \\[\\[\\[","(("),"\\[\\[","("),"\\[","") AS ?v4).
+ BIND(REPLACE(REPLACE(REPLACE(?v4,"]]]","))"),"]]",")"),"]","") AS ?v5).
+ BIND(UCASE(REPLACE(REPLACE(?v5,"\\{",""),"}","")) AS ?v6).
+ BIND(CONCAT(?v6,"^^geo:wktLiteral") AS ?wkt).
+ FILTER(CONTAINS(UCASE(?wkt),"LINESTRING")).
+}

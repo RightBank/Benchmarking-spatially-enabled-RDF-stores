@@ -1,0 +1,14 @@
+PREFIX cpmeta1: <http://meta.icos-cp.eu/ontologies/cpmeta/>
+PREFIX geo: <http://www.opengis.net/ont/geosparql#>
+PREFIX sf: <http://www.opengis.net/ont/sf#> 
+
+CONSTRUCT {?obj a geo:Feature;
+                geo:hasGeometry [ 
+                    a sf:Point;
+                    geo:asWKT ?wkt
+                ] }
+  WHERE{
+ ?obj cpmeta1:hasLatitude ?Lat;
+	 cpmeta1:hasLongitude ?Lon.
+  BIND(CONCAT("Point(",STR(?Lon)," ",STR(?Lat),")","^^geo:wktLiteral") as ?WKT). 
+}
