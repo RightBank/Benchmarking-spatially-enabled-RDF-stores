@@ -7,6 +7,8 @@ The artifacts provided here were developed during a research ([Assessment and Be
  - Stardog 6.0.1
  - Openlink Virtuoso 8.2 (commercial edition)
  - GraphDB 8.8.0
+ 
+Please note that all the binary executable programs are in SourceForge (https://sourceforge.net/projects/benchmarking-spatial-rdf-store/files/). In this repository only source codes are delivered.
    
 The tests are performed from Java prorgams using the provided Java APIs for each of the RDF stores. Each folder corresponds to the source code and the compiled test programs of the rleated platform. For RDF4J, Jena, Stardog and GraphDB the test prorgams are capable to launch an embeded RDF engine/server  which resides within  the Same JVM. For Virtuoso however, a running Virtuoso server instance is required and the test prorgams require the parameters to the server as command line arguements. 
 
