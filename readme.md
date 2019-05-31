@@ -1,4 +1,4 @@
-# Introduction
+# Spatially-enabled RDF store benchmarking
 
 The artifacts provided here were developed during a research - Assessment and Benchmarking of Spatially-Enabled RDF stores for Next Generation of Spatial Data Infrastructure. The research is aimed at the evaluation of geospatial capabilities (with focus on GeoSPARQL-compliance) of five well-known RDF stores: 
 
