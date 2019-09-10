@@ -1,6 +1,6 @@
 # Spatially-enabled RDF store benchmarking
 
-The artifacts provided here were developed during a research - [Assessment and Benchmarking of Spatially-Enabled RDF stores for Next Generation of Spatial Data Infrastructure](https://www.mdpi.com/2220-9964/8/7/310"Journal paper"). The research is aimed at the evaluation of geospatial capabilities (with focus on GeoSPARQL-compliance) of five well-known RDF stores: 
+The artifacts provided here were developed during a research - [Assessment and Benchmarking of Spatially-Enabled RDF stores for Next Generation of Spatial Data Infrastructure](https://www.mdpi.com/2220-9964/8/7/310). The research is aimed at the evaluation of geospatial capabilities (with focus on GeoSPARQL-compliance) of five well-known RDF stores: 
 
  - Eclipse RDF4J 2.4.2
  - Apache Jena 3.9.0 with GeoSPARQL-Jena 1.0.3
